@@ -1,0 +1,13 @@
+input_row = int(input())
+
+i = 1
+for k in range(1, input_row + 1) :
+    space = input_row-k
+    print(" " * space, "-"*i)
+    i += 2
+i = i - 2
+for j in range(1, input_row) :
+    i -= 2
+    row_now = input_row - j
+    space = input_row-row_now
+    print(" "*space, "-"*i)
